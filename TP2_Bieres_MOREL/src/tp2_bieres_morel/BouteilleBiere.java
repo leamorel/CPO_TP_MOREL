@@ -32,11 +32,12 @@ public class BouteilleBiere {
     public boolean Décapsuler() {
         if (ouverte == false) {
             ouverte = true ;
+            return true;
         } else {
-            System.out.println("erreur : biere déjà ouverte");           
+            System.out.println("erreur : biere déjà ouverte");  
+            return false;
         }
-        return false;
     }
-
+}
 
 
